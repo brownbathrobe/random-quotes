@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+#container {
+  margin: 100px auto;
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#quote {
+  margin-top: 10px;
+}
+
+#new-one {
+  display: block;
+  margin: 0 auto;
+}
+
+.content {
+  font-size: 1.1em;
+}
+
+.author {
+  color: gray;
+  font-style: italic;
+}
