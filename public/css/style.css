@@ -1,11 +1,12 @@
 body {
-  background-color: black;
-  color: white;
+  background: url("/img/somuch.jpeg");
 }
 
 #container {
-  margin: 100px auto;
-  width: 200px;
+  background : rgba(255, 255, 255, .8);
+  margin     : 100px auto;
+  width      : 200px;
+  padding    : 20px;
 }
 
 h1 {
@@ -17,8 +18,8 @@ h1 {
 }
 
 #new-one {
-  display: block;
-  margin: 0 auto;
+  display : block;
+  margin  : 5px auto;
 }
 
 .content {
@@ -26,6 +27,6 @@ h1 {
 }
 
 .author {
-  color: gray;
-  font-style: italic;
+  color      : gray;
+  font-style : italic;
 }
