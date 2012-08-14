@@ -38,7 +38,7 @@ quotes = [
   ["Whenever I feel like exercising I lie down until the feeling passes!", "Robert M. Hutchins"],
   ["We can't win at home. We can't win on the road. As general manager, I just can't figure out where else to play.", "Pat Williams"],
   ["I want your heart. I want to eat your children.", "Mike Tyson"],
-  ["I don't think there's anybody in this organization not focused on the 49ers...I mean Chargers.", "Bill Belichick"],
+  ["I don't think there's anybody in this organization not focused on the 49ers... I mean Chargers.", "Bill Belichick"],
   ["If the NBA were on channel 5 and a bunch of frogs making love was on channel 4, I'd watch the frogs even if they were coming in fuzzy.", "Bobby Knight"],
   ["He's a guy who gets up at six o'clock in the morning regardless of what time it is.", "Lou Duva"],
   ["When you get that nice celebration coming into the dugout and you're getting your ass hammered by guys - there's no better feeling than to have that done.", "Matt Stairs"],
@@ -55,7 +55,7 @@ quotes = [
 
 
 get "/" do
-  File.read('index.html')
+  File.read(File.join('public', 'index.html'))
 end
 
 get "/random_quote" do
