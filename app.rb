@@ -58,6 +58,12 @@ get "/" do
   File.read(File.join('public', 'index.html'))
 end
 
+get "/quotes" do
+  all_quotes = []
+  quotes.each { |q| all_quotes << { :content => q[0], :author => q[1], :favorite => false } }
+  all_quotes.to_json
+end
+
 get "/random_quote" do
   random_quote = quotes[rand(quotes.length)]
   quote = { :content => random_quote[0], :author => random_quote[1] }

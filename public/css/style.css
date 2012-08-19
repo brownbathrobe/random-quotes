@@ -1,5 +1,5 @@
 body {
-  background: url("/img/somuch.jpeg");
+  /*background: url("../img/somuch.jpeg");*/
 }
 
 #container {
@@ -7,6 +7,16 @@ body {
   margin     : 100px auto;
   width      : 200px;
   padding    : 20px;
+}
+
+#title {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin:     0;
+  padding:    0;
 }
 
 h1 {
@@ -29,4 +39,17 @@ h1 {
 .author {
   color      : gray;
   font-style : italic;
+}
+
+.quote {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.quote .fave {
+  color: red;
+}
+
+p {
+  margin: 10px 0 0 0 ;
 }

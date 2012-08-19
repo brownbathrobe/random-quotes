@@ -2,25 +2,23 @@
 <html>
   <head>
     <title>random quote thinger</title>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-    <script src="js/underscore.js"></script>
-    <script src="js/backbone.js"></script>
-    <script src="js/app.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
+    <!-- <script src="js/underscore.js"></script> -->
+    <!-- <script src="js/backbone.js"></script> -->
+    <!-- <script src="js/app.js"></script> -->
+    <script data-main="js/app" src="js/lib/require.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div id="container">
-      <h1>So.</h1>
-      <h1>Much.</h1>
-      <h1>Sports.</h1>
-      <div id="quote"></div>
-      <!-- <img src="img/somuch.jpeg" /> -->
+      <div id="title">
+        <h1>So.</h1>
+        <h1>Much.</h1>
+        <h1>Sports.</h1>
+      </div>
+      <h4>I love <span id="faves"></span> of these quotes!!!</h4>
+      <ul id="quotes"></ul>
     </div>
-    <script id="quote-template" type="text/template">
-      <p class="content"><%= content %></p>
-      <p class="author">- <%= author %></p>
-      <button id="new-one">ANOTHER</button>
-    </script>
   </body>
 </html>
