@@ -16,10 +16,10 @@ require.config({
     }
   },
   paths: {
-    jquery: 'lib/jquery.min',
+    jquery:     'lib/jquery.min',
     underscore: 'lib/underscore',
-    backbone: 'lib/backbone',
-    text: 'lib/text'
+    backbone:   'lib/backbone',
+    text:       'lib/text'
   }
 })
 
@@ -27,6 +27,7 @@ require([
   'views/quotes',
   'collections/quotes'
 ], function( QuotesView, Quotes ) {
-  new QuotesView({ collection : Quotes })
-  Quotes.fetch()
+  var quotes = new Quotes()
+  new QuotesView({ collection : quotes })
+  quotes.fetch()
 })
